@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACDB RECORDS CDMX V7 GLOBAL</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO VISUAL -->
+<header class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>ACDB RECORDS CDMX</h1>
+    <p>GLOBAL HIP HOP • STREAMING LABEL • INDUSTRY PLATFORM</p>
+
+    <button onclick="enter()">ENTER PLATFORM</button>
+  </div>
+</header>
+
+<!-- APP -->
+<div id="app" style="display:none;">
+
+<!-- NAV -->
+<nav>
+  <button onclick="view('home')">Home</button>
+  <button onclick="view('music')">Music</button>
+  <button onclick="view('artists')">Artists</button>
+  <button onclick="view('admin')" id="adminBtn" style="display:none;">Admin</button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+
+  <h2>🔥 GLOBAL FEED</h2>
+
+  <!-- IMAGENES PRO HIP HOP -->
+  
+
+  <div id="feed"></div>
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+  <h2>🎧 GLOBAL STREAM</h2>
+
+  <div id="songs"></div>
+
+  <!-- PLAYER -->
+  <div id="player">
+    <audio controls id="audioPlayer"></audio>
+  </div>
+</section>
+
+<!-- ARTISTS -->
+<section id="artists">
+  <h2>🎤 ACDB ARTISTS</h2>
+  <div id="artistList"></div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" style="display:none;">
+  <h2>🔐 ADMIN PANEL</h2>
+
+  <input id="title" placeholder="Song title">
+  <input id="link" placeholder="Song link">
+  <button onclick="addSong()">Upload</button>
+
+  <input id="news" placeholder="News">
+  <button onclick="addNews()">Post</button>
+
+  <input id="artist" placeholder="Artist name">
+  <button onclick="addArtist()">Add</button>
+</section>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+
+<script src="app.js"></script>
+</body>
+    </html>
