@@ -1,0 +1,63 @@
+body{
+  margin:0;
+  font-family:'Montserrat', sans-serif;
+  background:#0a0a0a;
+  color:white;
+}
+
+/* HERO CINEMATIC */
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1520697830682-bbb6e85e2b0d') center/cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:60px;
+  letter-spacing:6px;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  background:#111;
+  padding:10px;
+}
+
+/* SECTIONS */
+section{
+  padding:40px;
+}
+
+/* SONG LIST */
+#songs div{
+  background:#111;
+  padding:10px;
+  margin:10px;
+  cursor:pointer;
+}
+
+/* PLAYER FIXED */
+#player{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#000;
+  padding:10px;
+}
